@@ -94,13 +94,13 @@ $ yarn -v
 ```
 
 To run the project
-**DB
+###DB
      cd db && docker-compose build
      docker-compose up -d
-**Server
+###Server
      cd server && npm run start:dev
      server will run http://localhost:3001
-Client
+###Client
      cd src && npm dev Client will run http://localhost:3000
 
 ### How to confirm to success to build environment
