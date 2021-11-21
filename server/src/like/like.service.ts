@@ -11,5 +11,11 @@ import { MurmursService } from 'src/murmurs/murmurs.service';
 export class LikeService {
     constructor(@InjectRepository(LikePost) private repo:Repository<LikePost>,private murmurService:MurmursService){}
 
-    
+    async postLike(murmur:Murmur,user:User){
+        
+        const likepost = this.repo.create();
+        likepost.murmur=murmur;
+        likepost.user= user;
+        return this.repo.save(likepost);
+    }
 }
