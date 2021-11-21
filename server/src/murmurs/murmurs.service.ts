@@ -9,7 +9,11 @@ import { CreateMurmurDto } from './dtos/create-murmur.dto';
 export class MurmursService {
   constructor(@InjectRepository(Murmur) private repo: Repository<Murmur>) {}
 
-  
+  async postMurmur(murmur: CreateMurmurDto, user: User) {
+    const murmurs = await this.repo.create(murmur);
+    murmurs.user = user;
+    return this.repo.save(murmurs);
+  }
 
   async findUserMurmur(id: number) {
     const murmurs = await this.repo
