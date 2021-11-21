@@ -93,16 +93,15 @@ $ yarn -v
 1.22.4
 ```
 
-### setup project
-#### DB
-1. cd db && docker-compose build
-1. docker-compose up -d
-
-#### Server
-1. cd server && npm run ts-node index.ts
-
-#### Client
-1. cd src && yarn dev
+To run the project
+**DB
+     cd db && docker-compose build
+     docker-compose up -d
+**Server
+     cd server && npm run start:dev
+     server will run http://localhost:3001
+Client
+     cd src && npm dev Client will run http://localhost:3000
 
 ### How to confirm to success to build environment
 1. You access to http://localhost:3000/
