@@ -31,5 +31,13 @@ export class MurmursService {
     return await this.repo.find();
   }
   
-  
+  async deleteMurmur(murmurId: number, userId: number) {
+    const murmur = await this.repo
+      .createQueryBuilder('murmur')
+      .where('murmurId = :murmurId', { murmurId })
+      .andWhere('userUserId = :userId', { userId })
+      .getOne();
+
+    return this.repo.remove(murmur);
+  }
 }
