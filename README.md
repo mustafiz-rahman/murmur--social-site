@@ -1,16 +1,7 @@
 # Web Application Test
 ## Theme
 Please implement web application which is able to show murmur(=tweet) by user. (this application is similar to Twitter)
-```
-$ node -v
-v12.18.3
-$ npm -v
-6.14.6
-$ yarn -v
-1.22.4
-```
 
-<<<<<<< develop
 ### implimented REST api
 
   POST: http://localhost:3001/auth/signin
@@ -37,18 +28,7 @@ $ yarn -v
 #### Client
 1. cd src && npm run dev
 Client will run http://localhost:3000
-=======
 
-sample
-
-```
-$ node -v
-v12.18.3
-$ npm -v
-6.14.6
-$ yarn -v
-1.22.4
-```
 
 To run the project
 ###DB
@@ -60,5 +40,5 @@ To run the project
 ###Client
      cd src && npm dev Client will run http://localhost:3000
 
->>>>>>> main
+
 
