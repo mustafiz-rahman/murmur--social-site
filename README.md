@@ -30,7 +30,7 @@ The ability to build a development environment is also the subject of this test,
 2. server will run http://localhost:3001
 
 #### Client
-1. cd src && npm dev
+1. cd src && npm run dev
 Client will run http://localhost:3000
 ### How to confirm to success to build environment
 1. You access to http://localhost:3000/
