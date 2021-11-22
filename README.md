@@ -7,7 +7,7 @@ Please implement web application which is able to show murmur(=tweet) by user. (
 It is assumed that node(v12.x.x), npm and yarn are installed.
 The ability to build a development environment is also the subject of this test, so even if an error occurs, please resolve it on your own.
 ### implimented REST api
-User :[
+
   POST: http://localhost:3001/auth/signin
   POST: http://localhost:3001/auth/signup
   POST: http://localhost:3001/auth/signout
