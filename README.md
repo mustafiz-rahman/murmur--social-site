@@ -2,10 +2,6 @@
 ## Theme
 Please implement web application which is able to show murmur(=tweet) by user. (this application is similar to Twitter)
 
-
-### install modules
-It is assumed that node(v12.x.x), npm and yarn are installed.
-The ability to build a development environment is also the subject of this test, so even if an error occurs, please resolve it on your own.
 ### implimented REST api
 
   POST: http://localhost:3001/auth/signin
@@ -32,8 +28,17 @@ The ability to build a development environment is also the subject of this test,
 #### Client
 1. cd src && npm run dev
 Client will run http://localhost:3000
-### How to confirm to success to build environment
-1. You access to http://localhost:3000/
-1. It's success if render html.
+
+
+To run the project
+###DB
+     cd db && docker-compose build
+     docker-compose up -d
+###Server
+     cd server && npm run start:dev
+     server will run http://localhost:3001
+###Client
+     cd src && npm dev Client will run http://localhost:3000
+
 
 
